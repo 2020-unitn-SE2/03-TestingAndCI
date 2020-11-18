@@ -24,7 +24,7 @@ app.post('/courses', (req, res) => {
     courses_offered.push(new_course)
     res.status(201)
     res.json(new_course)
-    console.log(courses_offered)
+    // console.log(courses_offered)
 })
 
 app.post('/students', (req, res) => {

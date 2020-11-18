@@ -21,19 +21,16 @@ describe('api.test', () => {
                 store +=  data[0].id
             } )
             .then(r => {
-                console.log(store, r)
-            })
-            .then(r => {
                 return fetch(url, {
                     method: 'POST',
                     body: JSON.stringify({name: 'hello course'+ store}),
-                    headers: {
-                    'Content-Type': 'application/json',
-                },
-            })})
+                    headers: { 'Content-Type': 'application/json' },
+                })
+            })
             .then(r => r.json())
-            .then(data => expect(data.id).toEqual("hellocourse"+store) )
-            .then(r => console.log(store+10, r))
+            .then( data => {
+                expect(data.id).toEqual("hellocourse"+store)
+            })
     })
 
 
