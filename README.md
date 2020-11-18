@@ -86,7 +86,7 @@ Then include the "Build status image" into your repository, in the readme file.
 Click on the "Build status image" on Travis CI Dashboard to get the image embedding link.
 Example:
 
-[![Build Status](https://travis-ci.org/marcorobol/is2-jest.svg?branch=master)](https://travis-ci.org/marcorobol/is2-jest)
+[![Build Status](https://travis-ci.org/2020-unitn-SE2/03-TestingAndCI.svg?branch=master)](https://travis-ci.org/2020-unitn-SE2/03-TestingAndCI)
 
 
 
